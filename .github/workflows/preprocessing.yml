@@ -31,10 +31,10 @@ jobs:
           python Preprocessing/automate_Reinoufal-Ramadhan.py \
             --input german_credit_data_raw/german_credit_data_raw.csv \
             --target Risk \
-            --output Preprocessing/namadataset_preprocessing
+            --output german_credit_data_preprocessing
 
       - name: Upload preprocessing artifact
         uses: actions/upload-artifact@v4
         with:
-          name: namadataset_preprocessing
-          path: Preprocessing/namadataset_preprocessing
+          name: german_credit_data_preprocessing
+          path: german_credit_data_preprocessing
